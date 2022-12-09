@@ -2,5 +2,9 @@
 
 use types::Tag;
 
+pub use super::hmtx::LongMetric;
+
 /// 'vmtx'
 pub const TAG: Tag = Tag::new(b"vmtx");
+
+include!("../../generated/generated_vmtx.rs");
